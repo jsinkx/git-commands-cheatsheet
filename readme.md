@@ -43,3 +43,9 @@ git clone url
 Зайти в саму папку, скаченного репозитория (cd папка)
 
 git remote add pb url
+
+# Git убираем [untrack files](https://stackoverflow.com/questions/45400361/why-is-gitignore-not-ignoring-my-files)
+
+- `git rm -r --cached`
+- `. git add .`
+- `git commit -m "Untrack files in .gitignore"`
