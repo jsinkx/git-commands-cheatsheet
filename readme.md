@@ -77,6 +77,9 @@
 ## Some abbreviations
 
 `-f` or `--force` - force action
+
 `~` - parent
+
 `@` - HEAD
+
 `*` or `.` - all
