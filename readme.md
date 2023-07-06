@@ -1,51 +1,82 @@
-# Git консольные команды
+# Git
 
-git init - инициализируем git
+---
 
-git status - статус git'а
+## Commands
 
-git add . - добавить все папки в отслеживаение git
+`git init` - initialization git in project
 
-git commit -m "" - добавить коммит с сообщением
+`git status` - status local files
 
-git branch -M main - переименовываем ветку master в main
+`git branch <branch-name>` - create branch
 
-git remote add origin url - подключаем git к удаленому репозиторию
+- `git branch -v` - info about last commit
 
-git remote add pb url - подключаемся к удаленому репозиторию
+- `git branch -M <branch-name>` - rename current branch
 
-git push -u origin main - загружаем на Github ветку main
+`git checkout <branch-name>` - change current (HEAD) branch
 
-git push - загрузить на Github
+- `git checkout -b <branch-name>` - create and change current (HEAD) branch
 
-git pull - скачать с Github
+`git add <file1> <file2>` - add files for git indexing
 
-# Git последовательность дейстивий при подключении к пустому репозиторию
+`git commit` - add commit
 
-git init
+- `git commit -m "message"` - add commit changes with message
 
-git add .
+- `git commit -am "message` - add commit all last changes with message
 
-git commit -m "Сообщение"
+`git remote add origin <url>` - connect to first time created repo
 
-git branch -M main
+- `git remote add pb <url>` - connect to already exist repo
 
-git remote add origin url
+`git stash` - archive last changes, which not committed (unfinished changes)
 
-git push -u origin main
+- `git stash pop` - get archive changes
 
-# Git последовательность дейстивий при подключении к рабочему репозиторию
+`git reset <commit-id>` - return to commit-id
 
-Зайти папку, в которой будет располагаться скаченный репозиторий с Github
+- `git reset --hard` - return to one commit back
 
-git clone url
+`git push` - upload last changes
 
-Зайти в саму папку, скаченного репозитория (cd папка)
+- `git push -u origin <branch-name>` - upload branch
 
-git remote add pb url
+`git pull` - download last changes
 
-# Git убираем [untrack files](https://stackoverflow.com/questions/45400361/why-is-gitignore-not-ignoring-my-files)
+## The sequence of actions when connecting to the working repository
 
-- `git rm -r --cached`
-- `. git add .`
-- `git commit -m "Untrack files in .gitignore"`
+1. `git init`
+
+2. `git add *`
+
+3. `git commit -m "Init"`
+
+4. `git branch -M main`
+
+5. `git remote add origin <url>`
+
+6. `git push -u origin main`
+
+## The sequence of actions when connecting to already existing repository
+
+1. `git clone <url>`
+
+2. `cd <cloned-repo-folder>`
+
+3. `git remote add pb <url>`
+
+## Remove [untrack files](https://stackoverflow.com/questions/45400361/why-is-gitignore-not-ignoring-my-files)
+
+1. `git rm -r --cached`
+
+2. `git add *`
+
+3. `git commit -m "Untrack files in .gitignore"`
+
+## Some abbreviations
+
+`-f` or `--force` - force action
+`~` - parent
+`@` - HEAD
+`*` or `.` - all
