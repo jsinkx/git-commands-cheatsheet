@@ -24,7 +24,7 @@
 
 -   `git commit -m "message"` - add commit changes with message
 
--   `git commit -am "message` - add commit all last changes with message
+-   `git commit -am "message"` - add commit all last changes with message
 
 `git remote add origin <url>` - connect to first time created repo
 
@@ -82,4 +82,4 @@
 
 `@` - HEAD
 
-`*` or `.` - all; _`*`may not find files whose names begin with`.`(like`.env`)_
+`*` or `.` - all; _`*`may not find files whose names begin with `.` (like `.env`)_
