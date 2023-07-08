@@ -10,37 +10,37 @@
 
 `git branch <branch-name>` - create branch
 
-- `git branch -v` - info about last commit
+-   `git branch -v` - info about last commit
 
-- `git branch -M <branch-name>` - rename current branch
+-   `git branch -M <branch-name>` - rename current branch
 
 `git checkout <branch-name>` - change current (HEAD) branch
 
-- `git checkout -b <branch-name>` - create and change current (HEAD) branch
+-   `git checkout -b <branch-name>` - create and change current (HEAD) branch
 
 `git add <file1> <file2>` - add files for git indexing
 
 `git commit` - add commit
 
-- `git commit -m "message"` - add commit changes with message
+-   `git commit -m "message"` - add commit changes with message
 
-- `git commit -am "message` - add commit all last changes with message
+-   `git commit -am "message` - add commit all last changes with message
 
 `git remote add origin <url>` - connect to first time created repo
 
-- `git remote add pb <url>` - connect to already exist repo
+-   `git remote add pb <url>` - connect to already exist repo
 
 `git stash` - archive last changes, which not committed (unfinished changes)
 
-- `git stash pop` - get archive changes
+-   `git stash pop` - get archive changes
 
 `git reset <commit-id>` - return to commit-id
 
-- `git reset --hard` - return to one commit back
+-   `git reset --hard` - return to one commit back
 
 `git push` - upload last changes
 
-- `git push -u origin <branch-name>` - upload branch
+-   `git push -u origin <branch-name>` - upload branch
 
 `git pull` - download last changes
 
@@ -48,7 +48,7 @@
 
 1. `git init`
 
-2. `git add *`
+2. `git add .`
 
 3. `git commit -m "Init"`
 
@@ -70,7 +70,7 @@
 
 1. `git rm -r --cached`
 
-2. `git add *`
+2. `git add .`
 
 3. `git commit -m "Untrack files in .gitignore"`
 
@@ -82,4 +82,4 @@
 
 `@` - HEAD
 
-`*` or `.` - all
+`*` or `.` - all; _`*`may not find files whose names begin with`.`(like`.env`)_
