@@ -38,6 +38,8 @@
 
 -   `git reset --hard` - return to one commit back
 
+`git revert <commit-id>` - reverts that commit with a new commit
+
 `git push` - upload last changes
 
 -   `git push -u origin <branch-name>` - upload branch
