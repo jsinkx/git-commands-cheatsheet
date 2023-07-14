@@ -14,7 +14,7 @@
 
 -   `git branch -M <branch-name>` - rename current branch
 
-`git checkout <branch-name>` - change current (HEAD) branch
+`git checkout <branch-name/commit-id>` - change current (HEAD) branch or change current commit
 
 -   `git checkout -b <branch-name>` - create and change current (HEAD) branch
 
