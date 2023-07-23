@@ -26,6 +26,10 @@
 
 -   `git commit -am "message"` - add commit all last changes with message
 
+-   `git commit --amend -m "new message"` - rename last changes commit
+
+-   `git commit --amend -c <commit-id>` - rename commit by id
+
 `git remote add origin <url>` - connect to first time created repo
 
 -   `git remote add pb <url>` - connect to already exist repo
