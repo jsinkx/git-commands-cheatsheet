@@ -14,6 +14,8 @@
 
 -   `git branch -M <branch-name>` - rename current branch
 
+-   `git branch -d <branch-name>` - deletes this branch
+
 `git checkout <branch-name/commit-id>` - change current (HEAD) branch or change current commit
 
 -   `git checkout -b <branch-name>` - create and change current (HEAD) branch
@@ -41,6 +43,8 @@
 `git reset <commit-id>` - return to commit-id
 
 -   `git reset --hard` - return to one commit back
+
+`git revert <commit-id>` - reverts that commit with a new commit
 
 `git push` - upload last changes
 
