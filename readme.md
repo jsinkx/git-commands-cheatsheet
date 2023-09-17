@@ -5,6 +5,7 @@
 ## Commands
 
 `git config --global user.name "name"` - setup users name in global config
+
 `git config --global user.email <email>` - setup users email in global config
 
 `git init` - initialization git in project
@@ -15,7 +16,9 @@
 
 - `git log --oneline` - short log
 
-`git diff <commit-id-from> <commit-id-to>` - show log difference in commits
+- `git log --graph --oneline` - short log with drawled graph
+
+`git diff <(commit-id/branch)-from> <(commit-id/branch)-to>` - show log difference in commits
 
 - `git diff --staged` - show log difference in commits
 
@@ -48,6 +51,7 @@
 `git remote add origin <url>` - connect to first time created repo
 
 - `git remote add pb <url>` - connect to already exist repo
+
 - `git remote -v` - log connected remotes
 
 `git stash` - archive last changes, which not committed (unfinished changes)
