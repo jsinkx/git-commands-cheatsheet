@@ -74,6 +74,18 @@
 
 `git pull` - download last changes
 
+- `git pull --rebase origin <branch>` - pull with with rebase option (if have conflicts with origin branch)
+
+`git merge <branch>` - merge in current brunch
+
+- `git merge --no-edit <branch>` - merge without message edit
+
+`git rebase <branch>` - rebase (overlay) commits from one branch to current or other
+
+- `git rebase --abort` - cancel rebase
+
+- `git rebase --continue` - fix conflicts
+
 ## The sequence of actions when connecting to the working repository
 
 1. `git init`
@@ -105,6 +117,8 @@
 3. `git commit -m "Untrack files in .gitignore"`
 
 ## Some abbreviations
+
+`origin` - remote branch
 
 `-f` or `--force` - force action
 
