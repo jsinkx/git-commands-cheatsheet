@@ -110,7 +110,7 @@
 
 ## Remove [untrack files](https://stackoverflow.com/questions/45400361/why-is-gitignore-not-ignoring-my-files)
 
-1. `git rm -r --cached`
+1. `git rm -r --cached .`
 
 2. `git add .`
 
